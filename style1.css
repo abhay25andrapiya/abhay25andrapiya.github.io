@@ -1102,3 +1102,28 @@ img {
         text-align: center;
     }
 }
+//media
+@media (max-width: 768px) {
+  /* Hero section container */
+  .hero-container {  /* (Apne main container ki class ka naam dalein) */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Text aur card container dono full width lein */
+  .hero-content, .code-card-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Buttons ko center karein */
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
